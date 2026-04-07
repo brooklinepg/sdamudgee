@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "badge": "Coming to Mudgee, NSW 2850",
+    "headline1": "A beautiful home",
+    "headline2": "built for you,",
+    "headline3": "in Mudgee.",
+    "subheading": "Premium Specialist Disability Accommodation — two purpose-built SDA homes at 127 Gladstone Street, minutes from Mudgee's heart, designed around your life, your independence, and your joy."
+  },
+  "about": {
+    "heading": "We're here to create a real home.",
+    "para1": "We're the owners and operators of this SDA property — a small, dedicated team who believe that people living with disability deserve the very best housing. Not just a compliant box, but a genuinely beautiful, joyful place to call home.",
+    "para2": "We've invested everything into getting this right — the layout, the finishes, the outdoor spaces, the technology, and the location. We want you, your family and your support team to feel excited about this home from the very first moment you see it.",
+    "para3": "127 Gladstone Street is built to the highest SDA standard (HPS) and approved for people with High Physical Support needs. Every detail — from the wide hallways to the assistive technology provisions — has been chosen with you in mind."
+  },
+  "location": {
+    "heading": "Right in the heart of Mudgee.",
+    "intro": "127 Gladstone Street sits on one of Mudgee's well-connected residential streets — close to everything that matters, and surrounded by the kind of country town warmth you can't manufacture.",
+    "points": [
+      {
+        "title": "Blackman's Park — walking distance",
+        "desc": "Mudgee's beloved community park and oval is right on your doorstep — perfect for morning strolls, community events and open-air living."
+      },
+      {
+        "title": "Mudgee CBD — ~450 metres",
+        "desc": "Cafés, shops, medical services, restaurants and community facilities — all within easy reach on flat, accessible streets."
+      },
+      {
+        "title": "Healthcare & Support Services",
+        "desc": "Mudgee Base Hospital and multiple allied health providers are a short drive away. The town has a growing disability support sector."
+      },
+      {
+        "title": "Mudgee — a great place to live",
+        "desc": "A vibrant regional town with a warm community, stunning landscape, and genuine country character. Mudgee is a place people love to call home."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Interested in calling this home?",
+    "subheading": "Register your interest and we'll be in touch with more details, floor plans and availability updates. No pressure, no obligation — just a friendly conversation.",
+    "note": "Or call us directly · We welcome calls from tenants, families, support coordinators and SDA providers.",
+    "email": "office@brooklinepg.com.au",
+    "address": "127 Gladstone Street, Mudgee NSW 2850",
+    "website": "www.sdamudgee.com.au"
+  },
+  "trust": {
+    "heading": "Good people, doing this properly.",
+    "subheading": "We know that choosing an SDA home is one of the most significant decisions a person and their family will make. Here's our commitment to you.",
+    "items": [
+      {
+        "icon": "🏗️",
+        "title": "Fully SDA Registered",
+        "desc": "NDIS registered SDA dwelling, fully compliant with all SDA design standards and enrolled with the NDIA."
+      },
+      {
+        "icon": "🤝",
+        "title": "Lease All Providers",
+        "desc": "We work with best in class SDA Providers. Your SIL Provider is your choice and completely your own."
+      },
+      {
+        "icon": "🔑",
+        "title": "Long-Term Tenancies",
+        "desc": "We're building homes for people to live in long-term. Stability and security matter to us as much as they do to you."
+      },
+      {
+        "icon": "💬",
+        "title": "Open & Transparent",
+        "desc": "We'll answer every question honestly. If you want to talk through the home, the lease or anything at all — just reach out."
+      }
+    ]
+  },
+  "comingsoon": {
+    "text": "🏡  Now accepting expressions of interest — Opening 2025  ·  www.sdamudgee.com.au"
+  }
+}
