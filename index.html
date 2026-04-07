@@ -1266,10 +1266,24 @@
     <div class="section-tag" style="color: rgba(255,255,255,0.8); justify-content: center;">Get in touch</div>
     <h2>Interested in calling<br><em>this home?</em></h2>
     <p class="cta-sub">Register your interest and we'll be in touch with more details, floor plans and availability updates. No pressure, no obligation — just a friendly conversation.</p>
-    <div class="cta-form">
-      <input type="email" placeholder="Your email address">
-      <button type="button">Register Interest →</button>
-    </div>
+    <form name="register-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="cta-form" style="flex-direction:column; align-items:center; gap:14px; max-width:500px; margin: 0 auto 20px;">
+      <input type="hidden" name="form-name" value="register-interest">
+      <p style="display:none;"><input name="bot-field"></p>
+      <div style="display:flex; gap:12px; width:100%; flex-wrap:wrap; justify-content:center;">
+        <input type="text" name="name" placeholder="Your name" required style="flex:1; min-width:180px; padding:16px 24px; border-radius:100px; border:none; font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none; background:white; color:#2C2C2C;">
+        <input type="email" name="email" placeholder="Your email address" required style="flex:1; min-width:180px; padding:16px 24px; border-radius:100px; border:none; font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none; background:white; color:#2C2C2C;">
+      </div>
+      <input type="tel" name="phone" placeholder="Phone number (optional)" style="width:100%; max-width:380px; padding:16px 24px; border-radius:100px; border:none; font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none; background:white; color:#2C2C2C;">
+      <select name="enquiry-type" style="width:100%; max-width:380px; padding:16px 24px; border-radius:100px; border:none; font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none; background:white; color:#2C2C2C; cursor:pointer;">
+        <option value="">I am a... (select one)</option>
+        <option value="tenant">Prospective tenant</option>
+        <option value="family">Family member / carer</option>
+        <option value="support-coordinator">Support coordinator</option>
+        <option value="sda-provider">SDA provider</option>
+        <option value="other">Other</option>
+      </select>
+      <button type="submit" style="padding:16px 40px; background:#2C2C2C; color:white; border:none; border-radius:100px; font-family:'DM Sans',sans-serif; font-weight:600; font-size:0.95rem; cursor:pointer; transition:background 0.2s;">Register Interest →</button>
+    </form>
     <div style="margin: 8px 0 24px;">
       <a href="/brochure.pdf" 
          download="SDA_Mudgee_Brookline_Brochure.pdf"
