@@ -341,7 +341,6 @@
 
 <main id="main">
 
-<!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <img class="hero-bg" src="images/streetscape.png" data-src="images.hero" alt="Artist impression of the two homes at 334 Peel Street, Bathurst, seen from the street. Two single-storey brick houses side by side, each with its own driveway, garage, picket fence and landscaped front garden.">
   <div class="hero-scrim" aria-hidden="true"></div>
@@ -367,7 +366,6 @@
   <a class="explore" href="#about"><span>Explore</span><span class="ln" aria-hidden="true"></span></a>
 </section>
 
-<!-- ============ STAT STRIP ============ -->
 <section class="stats" aria-label="Key facts">
   <div class="shell stat-row">
     <div class="stat"><div class="v">2</div><div class="k">Homes</div></div>
@@ -377,7 +375,6 @@
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
 <section class="band b-cream" id="about">
   <div class="shell duo">
     <div>
@@ -405,7 +402,6 @@
   </div>
 </section>
 
-<!-- ============ FEATURES ============ -->
 <section class="band b-alt" id="features">
   <div class="shell">
     <div class="center-head">
@@ -449,7 +445,6 @@
   </div>
 </section>
 
-<!-- ============ PULL QUOTE ============ -->
 <section class="band pullquote">
   <div class="shell">
     <blockquote>“A small building, doing quiet and essential work for the people around it. That's what stood here in 1942. That's what we've built again.”
@@ -458,7 +453,6 @@
   </div>
 </section>
 
-<!-- ============ THE HOMES ============ -->
 <section class="band b-sage" id="homes">
   <div class="shell">
     <div class="center-head">
@@ -546,7 +540,6 @@
   </div>
 </section>
 
-<!-- ============ STORY ============ -->
 <section class="band b-terra on-dark" id="story">
   <div class="shell">
     <div class="center-head">
@@ -578,7 +571,6 @@
   </div>
 </section>
 
-<!-- ============ GALLERY ============ -->
 <section class="band b-cream" id="gallery">
   <div class="shell">
     <div class="center-head">
@@ -609,7 +601,6 @@
   </div>
 </section>
 
-<!-- ============ LOCATION ============ -->
 <section class="band b-alt" id="location">
   <div class="shell">
     <div class="center-head">
@@ -659,7 +650,6 @@
   </div>
 </section>
 
-<!-- ============ WHAT IS SDA ============ -->
 <section class="band b-cream" id="sda">
   <div class="shell">
     <div class="center-head">
@@ -691,7 +681,6 @@
   </div>
 </section>
 
-<!-- ============ TEAM ============ -->
 <section class="band b-alt" id="team">
   <div class="shell">
     <div class="center-head">
@@ -731,7 +720,6 @@
   </div>
 </section>
 
-<!-- ============ QUESTIONS ============ -->
 <section class="band b-cream" id="questions">
   <div class="shell">
     <div class="center-head">
@@ -787,7 +775,6 @@
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
 <section class="band b-deep on-dark" id="contact">
   <div class="shell">
     <div class="c-grid">
@@ -890,15 +877,8 @@
 </footer>
 
 <script>
-/* ---------------------------------------------------------------
-   Content hydration.
-   Editable text and images live in _data/content.json and are
-   managed through the Decap CMS at /admin. Every field also has a
-   default written into the HTML above, so the page still reads
-   correctly if the fetch fails or it's opened straight off disk.
-   --------------------------------------------------------------- */
 (function(){
-  if(location.protocol === 'file:') return; /* fetch is blocked on file:// */
+  if(location.protocol === 'file:') return;
 
   fetch('_data/content.json', {cache:'no-store'})
     .then(function(r){ return r.ok ? r.json() : null; })
@@ -911,7 +891,6 @@
         }, data);
       }
 
-      /* --- text --- */
       document.querySelectorAll('[data-content]').forEach(function(el){
         var value = lookup(el.getAttribute('data-content'));
         if(value == null || String(value).trim() === '') return;
@@ -928,14 +907,12 @@
         }
       });
 
-      /* --- images uploaded through the CMS --- */
       document.querySelectorAll('img[data-src]').forEach(function(img){
         var value = lookup(img.getAttribute('data-src'));
         if(value == null || String(value).trim() === '') return;
         img.setAttribute('src', value);
       });
 
-      /* --- optional gallery slots --- */
       document.querySelectorAll('[data-slot]').forEach(function(box){
         var value = lookup(box.getAttribute('data-slot'));
         if(value == null || String(value).trim() === '') return;
@@ -952,7 +929,7 @@
         box.replaceWith(fig);
       });
     })
-    .catch(function(){ /* defaults already in the HTML */ });
+    .catch(function(){});
 
   function escapeHtml(s){
     return s.replace(/[&<>"']/g, function(c){
@@ -961,7 +938,6 @@
   }
 })();
 
-/* Header turns solid once you scroll past the hero */
 (function(){
   var h = document.getElementById('siteHeader');
   if(!h) return;
@@ -975,10 +951,6 @@
 })();
 </script>
 
-<!-- Netlify Identity.
-     Needed so the emailed CMS invite link works. When someone accepts an
-     invite they land on this page with a token in the URL; this sends them
-     on to /admin/ to set a password. Harmless for every other visitor. -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
